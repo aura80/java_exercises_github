@@ -123,7 +123,7 @@ public class PairOfGenericsMain {
 
         //  for (int i = 0; i < map2.values().size(); i++)
         //  for (int i = 0; i < listaMap2Values.size(); i++)
-            System.out.println(countHeavier2(listaMap2Keys, (int) listaMap2Values.get(3).charAt(6)));
+        System.out.println(countHeavier2(listaMap2Keys, (int) listaMap2Values.get(3).charAt(6)));
 
     }
 
