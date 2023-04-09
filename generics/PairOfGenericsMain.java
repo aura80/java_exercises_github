@@ -121,8 +121,8 @@ public class PairOfGenericsMain {
         System.out.print("      " + map2.values().toString().charAt(25));
         System.out.println("  " + listaMap2Values.indexOf("seller3"));
 
-        //        for (int i = 0; i < map2.values().size(); i++)
-//        for (int i = 0; i < listaMap2Values.size(); i++)
+        //  for (int i = 0; i < map2.values().size(); i++)
+        //  for (int i = 0; i < listaMap2Values.size(); i++)
             System.out.println(countHeavier2(listaMap2Keys, (int) listaMap2Values.get(3).charAt(6)));
 
     }
