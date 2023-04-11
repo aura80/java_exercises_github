@@ -1,5 +1,6 @@
 package java_exercises_github.generics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -53,6 +54,12 @@ public class LimitTypes<T extends Number> {
         return listOfIntegers;
     }
 
+    public static void LowerBoundLimit(List<? super Integer> list) {
+        List<Integer> listNo = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        list.addAll(listNo);
+        System.out.println(list);
+    }
+
     public static void main(String[] args) {
         LimitTypes<Double> no1 = new LimitTypes<>();
         no1.setNumber1(250.58D);
@@ -72,6 +79,17 @@ public class LimitTypes<T extends Number> {
         LimitTypes<Number> sum = new LimitTypes<>();
         System.out.println("Upper bound limit: " + UpperBoundedWildcards(Arrays.asList(3, 2.5, 36.25f, 82, 28.18d, 99.8f, 64)));
 
-        System.out.println("Lower bound limit: " + LowerBoundWildcard(List.of(10, 20, 30, 40, 50)));
+        System.out.println("Lower bound limit: \n" + LowerBoundWildcard(List.of(10, 20, 30, 40, 50)));
+
+        List<Integer> listIntegers = Arrays.asList(20, 40, 60, 80, 100);
+        List<Number> l = new ArrayList<>();
+        l.add(1);
+        l.add(22.5);
+        l.add(10.5D);
+        l.add(30.5);
+        l.add(30.5f);
+        l.add(3);
+        l.addAll(listIntegers);
+        LowerBoundLimit(l);     // we can't call with Arrays.asList() or List.of()
     }
 }
