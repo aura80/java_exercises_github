@@ -32,7 +32,6 @@ Exceptions - events that occur during the execution of a program;
            - the custom exceptions are exceptions made by the programmer;
            - the Throwable, Error, Exception and RuntimeException resides in java.lang package;
 
-
 Abstract class - abstract keyword is specified between the access modifier and the abstract class name;
                - class that can't be instantiated, objects of the abstract class can't be created;
                - used to share information between related classes;
