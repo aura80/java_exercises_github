@@ -1,5 +1,5 @@
 # java_exercises_github
-/*
+
 Exceptions - events that occur during the execution of a program;
            - it breaks the normal process;
            - at runtime it is searched a way to handle the situation;
@@ -141,4 +141,3 @@ Reflection - process by which a computer program can be modified at runtime;
            - it does not allow the validation at compilation;
            - specific to high-level languages;
            - using the objects available in the java.lang.reflect package.
-*/
