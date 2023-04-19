@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Liste {
+public class EqualsHashCodeExercises {
     public static void main(String[] args) {
         List<String> nume = new LinkedList<>();
         nume.add(0, "Marian");
