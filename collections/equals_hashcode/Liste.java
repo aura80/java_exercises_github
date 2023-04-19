@@ -1,6 +1,4 @@
-package java_exercises_github.collections;
-
-import designPatterns.builder2.Car;
+package java_exercises_github.collections.equals_hashcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,8 +39,8 @@ public class Liste {
 
         System.out.println();
 
-        Cars income = new Cars(55, "USD");
-        Cars expenses = new Cars(55, "USD");
+        Cars income = new Cars(220, "Hello");
+        Cars expenses = new Cars(220, "Hello");
         Cars otherExpenses = expenses;
         boolean balanced = income.equals(expenses);
         boolean balanced2 = otherExpenses.equals(expenses);
@@ -58,9 +56,9 @@ public class Liste {
         System.out.println();
 
         String a = "Scoala de vara";
-        String b = "Acasa";
+        String b = "Summer";
         String c = b;
-        String d = "Acasa";
+        String d = "Summer";
 
         System.out.println(a.equals(b));
         System.out.println(c.equals(b));
@@ -75,17 +73,36 @@ public class Liste {
 
         int x = 10;
         int y = 10;
-        boolean primitiveComparison = x == y;
-        System.out.println(primitiveComparison);
+        boolean comparePrimitives = x == y;
+        System.out.println(comparePrimitives);
 
         Cars car = new Cars(22, "Sport");
         Cars car1 = new Cars(22, "Sport");
-        boolean objectComparision = car == car1; // false, references vary
-        boolean objectComparisionUsingEquals = car.equals(car1);
+        boolean compareObjects = car == car1;
+        boolean compareObjectsUsingEquals = car.equals(car1);
 
-        System.out.println(objectComparision);
-        System.out.println(objectComparisionUsingEquals);
+        System.out.println(compareObjects);
+        System.out.println(compareObjectsUsingEquals);
 
+        System.out.println();
+
+        int result1 = Arrays.compare(new int[]{1, 2, 3}, new int[]{1, 2, 3});
+        System.out.println(result1); // 0
+
+        int result2 = Arrays.compare(new int[]{1, 2}, new int[]{1, 2, 3});
+        System.out.println(result2); // -1
+
+        int result3 = Arrays.compare(new int[]{1, 2, 3, 4}, new int[]{1, 2, 3});
+        System.out.println(result3); // 1
+
+        int result4 = Arrays.compare(new int[]{1, 3}, new int[]{3, 1});
+        System.out.println(result4); // -1
+
+        int result5 = Arrays.compare(new int[]{1, 3}, new int[]{3, 2, 1});
+        System.out.println(result5); // -1
+
+        int result6 = Arrays.compare(new int[]{1, 3}, new int[]{1, 2, 3});
+        System.out.println(result6); // 1
     }
 }
 
