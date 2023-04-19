@@ -141,3 +141,79 @@ Reflection - process by which a computer program can be modified at runtime;
            - it does not allow the validation at compilation;
            - specific to high-level languages;
            - using the objects available in the java.lang.reflect package.
+
+Collections - are containers that store and manipulate information;
+            - we don't have to implement data structures from scratch and we can reuse what was already implemented in java;
+            - the starting point for all the collections is the generic interface Collection, declared as: public interface Collection<> ...;
+            - collections: Set, List, Queue, Deque (double-ended queue), Map;
+            - Set, List, Queue interfaces are present in java.util package and extend the Collection interface;
+            - Deque interface extends the Queue interface;
+            - Map interface does not extend the Collection interface because Map assumes entries of type key/value pairs and Collection assume elements of one value;
+            - there is a difference between add(Object) from Collection and put(k,v) from Map;
+            - there is a difference between Collection.remove(Object) - which removes an element and Map.remove(Object) - which removes by key, not by entry;
+            - Map.Entry is a nested interface defined in the Map interface;
+            - Set: an unordered collection without duplicates;
+            - Set: -> HashSet (not ordered, stored in hash table);
+                   -> TreeSet (ordered over natural order(indexed, sorted) or over a comparator and stored in a tree);
+                   -> LinkedHashSet (it keeps the order of adding, stored in a hash table with a linked list);
+            - List: an ordered (over indexes) collection with duplicates;
+            - List: -> ArrayList - array structure - it is easier to find elements over indexes;
+                    -> LinkedList - organized in nodes that points to the next node - add(index, element) is faster with LinkedList;
+            - Queue: collection ordered over FIFO, LIFO mechanism;
+            - Queue: -> elements are added at the end of the queue and taken from both end (LIFO) or start (FIFO) of the queue;
+                     -> LinkedList;
+                     -> it implements methods from Collection interface, but it has it's own also: element(), peek(), offer(), poll();
+                     -> peek(), offer(), poll() does not throw exceptions;
+            - Deque: queue collection which applies operations, for adding and deletion, at both the beginning and the end of the queue;
+            - Deque: -> allows elements to be added both from the start and the end of the queue;
+                     -> ArrayDeque; 
+                     -> LinkedList;
+                     -> peek(), offer(), poll() does not throw exceptions;
+            - Map: collection of key-value pairs;
+            - Map: -> HashMap (not ordered, stored in hash table);
+                   -> TreeMap (ordered over key natural order(indexed, sorted) or over a key comparator);
+                   -> LinkedHashMap (it keeps the order of adding pairs, stored in a hash table with a linked list);
+            - Map: null value may be a key; 
+                   - methods: put, get, remove, size, isEmpty, containsKey, containsValue; 
+                   - methods: keySet - it returns a Set of the keys; 
+                              values - it returns a Collection of all the values; 
+                              entrySet - it returns a Set of all the key-value pairs; 
+                              Map.Entry - it represents a sigle key-value pair; 
+                              getKey - it returns a key from an entry; 
+                              getValue - it returns a value from an entry;
+Contracts in Java - agreements, promises to keep;
+                  - the Object class defines the equals() and hashCode() methods;
+                  - this means that those two methods are implicitly defined in every class we create;
+                  - equals() is: - reflexive: a.equals(a); 
+                                 - symmetric: if a.equals(b) then b.equals(a);
+                                 - transitive: if a.equals(b) and b.equals(c), then also a.equals(c);
+                                 - consistent: the value of equals() changes only if a property inside equals it changes; 
+                                 - consistent: calling the method several times should give the same result; 
+                                 - == compares primitive types;
+                                 - == compares references to the objects (their addresses);
+                                 - equals() compares the objects;
+                                 - comparing with null should return false;
+                  - hashCode(): - returns an integer representing the current instance of a class;
+                                - consistency: value of hashCode() changes only if a property of equals() changes;
+                                - consistency: multiple calls of hashCode() on the same object should give the same result;
+                                - equals relation: if a.equals(b) then a.hashCode() == b.hashCode();
+                                - hash collision: unequal objects can have the same hashCode();
+                  - contains() - overrides equals() method, but for HashSet the hashCode() method must be overriden too;    
+                               - always override hashCode() when we override equals();    
+                               - override hashCode() and equals() for value objects;    
+
+Sorting collections - to sort in collections we have to compare elements first;
+                    - comparison of the collections elements it is done using generic interfaces Comparator <T> and Comparable <T>;
+                    - Comparator <T> compares two objects of the same type, using the compare() method;
+                    - Comparable <T> compares an object with another object of any type, using the compareTo() method;
+                    - compare() and compareTo() methods return an int value and that one could be negative, zero or positive (-1, 0, 1);
+                    - those three values indicate the order of sorting;
+                    - lists created with List.of() are immutable and can not be sorted;
+                    - 
+                    - 
+                    - 
+                    - 
+                    - 
+                    - 
+                    - 
+                    - 
