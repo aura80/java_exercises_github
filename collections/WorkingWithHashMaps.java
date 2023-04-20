@@ -16,6 +16,8 @@ public class WorkingWithHashMaps {
         map1.put(9, "Anisoara");
         map1.put(8, "Beatrice");
         map1.put(10, "Daniel");
+        mapElements(map1);
+        System.out.println();
         System.out.println(map1);
         System.out.println("The map has " + mapSize(map1) + " elements");
         System.out.println();
@@ -29,7 +31,12 @@ public class WorkingWithHashMaps {
         System.out.println("Sorted descending over values:  " + mapEntryListDescendingValues(map1));
         System.out.println("Sorted ascending over values:   " + mapEntryListAscendingValues(map1));
 
+    }
 
+    public static <K, V> void mapElements(Map<K, V> map) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            System.out.println("  " + entry.getKey() + " " + entry.getValue());
+        }
     }
 
     public static <K, V> Integer mapSize(Map<K, V> map) {
