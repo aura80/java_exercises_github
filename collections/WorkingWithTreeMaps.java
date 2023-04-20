@@ -56,6 +56,13 @@ public class WorkingWithTreeMaps {
         System.out.println("                                      " + getKeys(map2));
         System.out.println("                                      " + getValues(map2));
         System.out.println("                              size:   " + map2.size());
+
+        System.out.println();
+
+        Map<String, Integer> map3 = new TreeMap<>(map2);
+        map3.forEach((key, value) -> System.out.printf("%s -> %d  *  ", key, value));
+        System.out.println();
+        System.out.println("Map's size:   " + map3.size() + "   elements");
     }
 
     public static <K, V> List<Map.Entry<K, V>> listaMap(Map<K, V> map) {
