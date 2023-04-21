@@ -17,6 +17,16 @@ public class UncheckedExceptions {
 
         System.out.println();
 
+        try {
+            nullPointerException3();
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        } finally {
+            System.out.println("Unboxing a null value!");
+        }
+
+        System.out.println();
+
         try{
             indexOutOfBoundException();
         } catch (IndexOutOfBoundsException e) {
@@ -60,6 +70,13 @@ public class UncheckedExceptions {
     private static void nullPointerException2() {
         String a = null;
         System.out.println(a.length());
+    }
+
+    private static void nullPointerException3() {
+        List<Integer> list = new ArrayList<>();
+        list.add(null);
+        int s = list.get(0);        // unboxing a null value
+        System.out.println(s);
     }
 
     private static void indexOutOfBoundException() {
