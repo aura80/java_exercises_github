@@ -36,11 +36,12 @@ Abstract class - abstract keyword is specified between the access modifier and t
                - class that can't be instantiated, objects of the abstract class can't be created;
                - used to share information between related classes;
                - contains normal methods and abstract methods;
-               - contains fields (interfaces don't contain normal fields but constants declared public static final);
+               - contains fields (interfaces don't contain normal fields, but constants declared public static final);
+               - it may have a constructor; 
                - to create objects of the type of abstract class, first we have to extend it;
                - a non-abstract child class extends the abstract class;
                - all the methods from the abstract class must be implemented inside the child class;
-               - abstract classes can implement interfaces but don't specify their body;
+               - abstract classes can implement interfaces but don't specify the body of their methods;
                - abstract classes can extend other abstract classes but may/or not implement their abstract methods inside;
                - all the methods of an abstract class will be implemented inside the child class that extends the abstract class;
                - even the abstract methods from the interfaces implemented by the abstract classes are implemented inside the child class of the abstyract class;
@@ -140,7 +141,20 @@ Generics   - templates which allow the parametrization of the classes, methods a
 Reflection - process by which a computer program can be modified at runtime;
            - it does not allow the validation at compilation;
            - specific to high-level languages;
-           - using the objects available in the java.lang.reflect package.
+           - using the objects available in the java.lang.reflect package;
+           - Class <?> objectReflectionClass = object.getClass(); 
+           - or Class <?> objectReflectionClass = Class.forName("package_class_name");
+           - Field[] allFields = objectReflectionClass.getDeclaredFields();
+           - Constructor[] allConstructors = objectReflectionClass.getDeclaredConstructors();
+           - Method[] allMethods = objectReflectionClass.getDeclaredMethods();  
+           - constructorOne.setAccessible(true);
+           - setAccessible(true) method used to make accessible a private element; 
+           - inside a try-catch block * ClassName newClassNameObject = (ClassName) constructorOne.newInstance(); 
+           - newInstance() method throws three exceptions handled in catch block; 
+           - to call a method we use the getDeclaredMethod() method;
+           - Method method = objectReflectionClass.getDeclaredMethod("methodName_as_String"); 
+           - if the method is private we have to make it accessible with method.setAccessible(true);  
+           - now we may call the method methodName_as_String() with invoke, method.invoke(newClassNameObject);
 
 Collections - are containers that store and manipulate information;
             - we don't have to implement data structures from scratch and we can reuse what was already implemented in java;
