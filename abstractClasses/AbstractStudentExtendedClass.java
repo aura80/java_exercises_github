@@ -1,10 +1,10 @@
 package java_exercises_github.abstractClasses;
 
-public class AbstractExtendedClass extends AbstractStudent{
+public class AbstractStudentExtendedClass extends AbstractStudent{
     private Integer age;
     private Boolean present;
 
-    public AbstractExtendedClass(String name, Integer age, Boolean present) {
+    public AbstractStudentExtendedClass(String name, Integer age, Boolean present) {
         super(name, present);
         this.age = age;
         this.present = present;
@@ -23,7 +23,7 @@ public class AbstractExtendedClass extends AbstractStudent{
     }
 
     public static void main(String[] args) {
-        AbstractStudent abstractStudent = new AbstractExtendedClass("Tudor", 23, true);
+        AbstractStudent abstractStudent = new AbstractStudentExtendedClass("Tudor", 23, true);
         abstractStudent.printMessage();
         System.out.println(abstractStudent.getName() + abstractStudent.isPresent());
         System.out.println(abstractStudent.getAge() + " years old");
@@ -31,7 +31,7 @@ public class AbstractExtendedClass extends AbstractStudent{
 
         System.out.println();
 
-        AbstractStudent abstractStudent2 = new AbstractExtendedClass("Mihai", 21, false);
+        AbstractStudent abstractStudent2 = new AbstractStudentExtendedClass("Mihai", 21, false);
         abstractStudent2.printMessage();
         System.out.println(abstractStudent2.getName() + abstractStudent2.isPresent());
         System.out.println(abstractStudent2.getAge() + " years old");
