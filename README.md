@@ -74,8 +74,12 @@ Local classes - classes declared inside a block of code like a method, an if or 
 Anonymous classes - classes without name which can be used only once;
                   - declared after the constructor call, between { } ;  
                   - may contain constants and static/non-static fields and methods;
-                  - it can't have constructors, interfaces and static initialization blocks (like try ... catch, ststic {...});
+                  - it can't have constructors, interfaces and static initialization blocks (like try ... catch, static {...});
                   - can access only final (constants) fields of outer classes or final local variables of the methods;
+                  - it suppose object and class creation on the same step;
+                  - it begins either from abstract classes or from interfaces;
+                  - inside abstract class Anonymous class, the access modifier public is not written before the abstract method; 
+                  - inside interface Anonymous class, the access modifier public is written before the abstract method; 
 
 Interfaces - it is a reference type;
            - it is specified by using the interface keyword between the access modifier and the name of the interface, in the interface definition;
