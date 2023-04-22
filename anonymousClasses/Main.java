@@ -1,10 +1,10 @@
 package java_exercises_github.anonymousClasses;
 
-import static java_exercises_github.anonymousClasses.AbstractClass.VAR_ABSTRACT;
+import static java_exercises_github.anonymousClasses.AbstractClassAnonymous.VAR_ABSTRACT;
 
 public class Main {
     public static void main(String[] args) {
-        AbstractClass abstractClass = new AbstractClass("Abstract class argument") {
+        AbstractClassAnonymous abstractClass = new AbstractClassAnonymous("Abstract class argument") {
             @Override
             String abstractMethod() {
                 return getMessage() + "  +  " + InterfaceAnonymous.CONST + "  =  " + (VAR_ABSTRACT + InterfaceAnonymous.VAR_INTERFACE);

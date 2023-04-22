@@ -1,11 +1,11 @@
 package java_exercises_github.anonymousClasses;
 
-public abstract class AbstractClass{
+public abstract class AbstractClassAnonymous {
     private String name;
     private static final String CONSTMESS = " Constant variable from the abstract class";
     public static final Integer VAR_ABSTRACT = 1;
 
-    public AbstractClass(String name) {
+    public AbstractClassAnonymous(String name) {
         this.name = name;
         System.out.println("Abstract class constructor accessed!");
     }
