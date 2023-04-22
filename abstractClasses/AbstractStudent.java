@@ -1,6 +1,6 @@
 package java_exercises_github.abstractClasses;
 
-public abstract class AbstractStudent extends AbstractBaseStudent implements AbstractStudentInterface{
+public abstract class AbstractStudent extends AbstractDetailsStudent implements AbstractStudentInterface{
     private String name;
     private Boolean present;
 
