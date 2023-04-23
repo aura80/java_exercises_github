@@ -2,12 +2,12 @@ package java_exercises_github.anonymousClasses;
 
 import static java_exercises_github.anonymousClasses.AbstractClassAnonymous.VAR_ABSTRACT;
 
-public class Main {
+public class AbstractClassAnonymousMain {
     public static void main(String[] args) {
         AbstractClassAnonymous abstractClass = new AbstractClassAnonymous("Abstract class argument") {
             @Override
             String abstractMethod() {
-                return getMessage() + "  +  " + InterfaceAnonymous.CONST + "  =  " + (VAR_ABSTRACT + InterfaceAnonymous.VAR_INTERFACE);
+                return getMessage() + "  +  " + AbstractClassAnonymousInterface.CONST + "  =  " + (VAR_ABSTRACT + AbstractClassAnonymousInterface.VAR_INTERFACE);
             }
 
             @Override
@@ -17,7 +17,7 @@ public class Main {
 
             @Override
             Integer abstractSumMethod() {
-                return (VAR_ABSTRACT + InterfaceAnonymous.VAR_INTERFACE) + abstractINTMethod();
+                return (VAR_ABSTRACT + AbstractClassAnonymousInterface.VAR_INTERFACE) + abstractINTMethod();
             }
         };
 
@@ -28,7 +28,7 @@ public class Main {
 
         System.out.println();
 
-        InterfaceAnonymous interfaceAnonymous = new InterfaceAnonymous() {
+        AbstractClassAnonymousInterface interfaceAnonymous = new AbstractClassAnonymousInterface() {
             @Override
             public String abstractMethodInterface() {
                 return CONST + "  + " + abstractClass.getMessage() + " = " + abstractMethodInterface2();

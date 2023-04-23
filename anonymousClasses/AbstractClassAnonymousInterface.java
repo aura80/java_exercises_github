@@ -1,6 +1,6 @@
 package java_exercises_github.anonymousClasses;
 
-public interface InterfaceAnonymous {
+public interface AbstractClassAnonymousInterface {
     String CONST = "Constant variable from the interface";
     Integer VAR_INTERFACE = 1;
 
