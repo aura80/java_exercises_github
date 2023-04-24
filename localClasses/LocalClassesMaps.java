@@ -3,7 +3,7 @@ package java_exercises_github.localClasses;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class LocalClasses {
+public class LocalClassesMaps {
     public static void main(String[] args) {
         Map<String, Integer> map = new TreeMap<>();
 
