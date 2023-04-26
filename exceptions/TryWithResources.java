@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class TryWithResources {
     public static void main(String[] args) {
+
         File file = new File("fisier.txt");
         Scanner scanner = null;
 
@@ -21,5 +22,6 @@ public class TryWithResources {
                 scanner.close();
             }
         }
+
     }
 }
