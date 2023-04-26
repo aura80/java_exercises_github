@@ -22,6 +22,5 @@ public class TryWithResourcesExceptions {
                 scanner.close();
             }
         }
-
     }
 }
