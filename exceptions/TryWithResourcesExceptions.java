@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TryWithResources {
+public class TryWithResourcesExceptions {
     public static void main(String[] args) {
 
         File file = new File("fisier.txt");
