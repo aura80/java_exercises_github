@@ -161,6 +161,7 @@ Reflection - process by which a computer program can be modified at runtime;
            - Method method = objectReflectionClass.getDeclaredMethod("methodName_as_String"); 
            - if the method is private we have to make it accessible with method.setAccessible(true);  
            - now we may call the method methodName_as_String() with invoke, method.invoke(newClassNameObject);
+           - it slows the program; 
 
 Collections - are containers that store and manipulate information;
             - we don't have to implement data structures from scratch and we can reuse what was already implemented in java;
