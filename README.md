@@ -219,7 +219,7 @@ Contracts in Java - agreements, promises to keep;
                                 - consistency: multiple calls of hashCode() on the same object should give the same result;
                                 - equals relation: if a.equals(b) then a.hashCode() == b.hashCode();
                                 - hash collision: unequal objects can have the same hashCode();
-                  - contains() - overrides equals() method, but for HashSet the hashCode() method must be overriden too;    
+                  - contains() - overrides equals() method, but for HashSet the hashCode() method must be overridden too;    
                                - always override hashCode() when we override equals();    
                                - override hashCode() and equals() for value objects;    
 
