@@ -215,6 +215,7 @@ Contracts in Java - agreements, promises to keep;
                                  - equals() compares the objects;
                                  - comparing with null should return false;
                   - hashCode(): - returns an integer representing the current instance of a class;
+                                - it is defined by the class Object;
                                 - consistency: value of hashCode() changes only if a property of equals() changes;
                                 - consistency: multiple calls of hashCode() on the same object should give the same result;
                                 - equals relation: if a.equals(b) then a.hashCode() == b.hashCode();
