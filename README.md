@@ -30,6 +30,8 @@ Exceptions - events that occur during the execution of a program;
            - resources are objects that implement the java.lang.AutoCloseable or from the java.io.Closeable;
            - we can also use the throw clause to throw exceptions;
            - the custom exceptions are exceptions made by the programmer;
+           - for checked exceptions we use throws in method signature; 
+           - for unchecked exceptions (RuntimeExceptions) we don't use throws in method signature; 
            - the Throwable, Error, Exception and RuntimeException resides in java.lang package;
 
 Abstract class - abstract keyword is specified between the access modifier and the abstract class name;
