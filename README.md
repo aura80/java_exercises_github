@@ -231,3 +231,7 @@ Sorting collections - to sort in collections we have to compare elements first;
                     - compare() and compareTo() methods return an int value and that one could be negative, zero or positive (-1, 0, 1);
                     - those three values indicate the order of sorting;
                     - lists created with List.of() are immutable and can not be sorted;
+
+Annotations - metadata, supplementary information that does not affect directly the code;
+            - can be processed by a compiler or at runtime when using our own code;
+            
