@@ -237,3 +237,15 @@ Sorting collections - to sort in collections we have to compare elements first;
 Annotations - metadata, supplementary information that does not affect directly the code;
             - can be processed by a compiler or at runtime when using our own code;
             
+Functional Interfaces   - interfaces with one single method;
+
+Lambda  - implementation of functional interface added with Java 8;
+        - it allows anonymous classes to be treated as functions;
+        - the name of the abstract method from the interface has no relevance;
+        - () parentheses for more than 1 arguments; 
+        - () parentheses for no arguments at all; 
+        - without parentheses when we have just 1 argument;
+        - -> between the list of arguments and the body of the method;
+        - the body of the method may contain curly braces {} or may not, if there is only one statement or if an exception is thrown in that one statement;
+        - the return keyword may be omitted or not;
+        - 
