@@ -7,7 +7,7 @@ public class IAmUsingLambdaMain {
         System.out.println(sumInterface1.sum(3, 5));
 
         SumInterface sumInterface2 = Integer::sum;
-        System.out.println(sumInterface2);
+        System.out.println(sumInterface2.sum(5, 10));
 
         System.out.println();
 
