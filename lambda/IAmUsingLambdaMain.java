@@ -1,13 +1,22 @@
 package java_exercises_github.lambda;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class IAmUsingLambdaMain {
     public static void main(String[] args) {
 
         SumInterface sumInterface1 = (a,b) -> a + b;
-        System.out.println(sumInterface1.sum(3, 5));
+        System.out.println(sumInterface1.suma(3, 5));
 
         SumInterface sumInterface2 = Integer::sum;
-        System.out.println(sumInterface2.sum(5, 10));
+        System.out.println(sumInterface2.suma(5, 10));
+
+        System.out.println();
+
+        ListOfIntegersInterface objListInt = new IAmUsingLambda();
+        List<Integer> l = Arrays.asList(35, 5,10,28,3,40,52,83,21);
+        objListInt.getIntegers(l);
 
         System.out.println();
 
