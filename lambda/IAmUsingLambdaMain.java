@@ -3,8 +3,8 @@ package java_exercises_github.lambda;
 public class IAmUsingLambdaMain {
     public static void main(String[] args) {
 
-        SumInterface sumInterface1 = (a,b) -> 3 + 5;
-        System.out.println(sumInterface1);
+        SumInterface sumInterface1 = (a,b) -> a + b;
+        System.out.println(sumInterface1.sum(3, 5));
 
         SumInterface sumInterface2 = Integer::sum;
         System.out.println(sumInterface2);
