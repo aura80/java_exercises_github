@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class IAmUsingLambda implements SumInterface, PrintInterface, ListOfIntegersInterface, SimpleList {
+public class IAmUsingLambda implements SumInterface, PrintInterface, ListOfIntegersInterface, SimpleListInterface {
 
     private Integer x;
     private Integer y;
