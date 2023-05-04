@@ -1,7 +1,9 @@
 package java_exercises_github.lambda;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.Flow;
 
 public class IAmUsingLambdaMain {
     public static void main(String[] args) {
@@ -31,5 +33,27 @@ public class IAmUsingLambdaMain {
         System.out.println(printInterface2.printMethod());
 
         System.out.println(((PrintInterface) obj).printMethod());
+
+        System.out.println();
+
+        SimpleList simpleList = () -> {
+            System.out.println("Elements of the list are:");
+            obj.getList().forEach(System.out::println);
+
+            return obj.getList();
+        };
+
+        System.out.println("*****" + simpleList.getList());
+
+        System.out.println();
+
+        System.out.println("*****" + obj.getAnotherList());
+
+        System.out.println();
+
+        obj.consumerLambda();
+
+
+
     }
 }
