@@ -29,4 +29,8 @@ public class Bichon {
     public static void printInfo() {
         System.out.println("The " + race + " is vaccinated");    // this keyword is not allowed in static methods and can't refer static fields
     }
+
+    public void itBarks() {
+        System.out.print("Ham ham! ");
+    }
 }

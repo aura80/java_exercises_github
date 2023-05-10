@@ -13,7 +13,21 @@ public class BichonMain {
         System.out.println(bichon.getName());
         System.out.println(bichon.getAge());
 
+        Bichon bichon1 = new Bichon("Boy", 1);
+        System.out.println(bichon1);
+        System.out.println(bichon1.getName());
+        System.out.println(bichon1.getAge());
+
         Bichon.printInfo();
+
+        bichon.itBarks();
+
+        System.out.println();
+
+        Maltez maltez = new Maltez();
+        maltez.itBarks();
+        Maltez maltez1 = new Maltez("Rita", 5);
+        maltez1.itBarks();
 
     }
 }
