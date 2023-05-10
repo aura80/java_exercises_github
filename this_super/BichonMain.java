@@ -13,5 +13,7 @@ public class BichonMain {
         System.out.println(bichon.getName());
         System.out.println(bichon.getAge());
 
+        Bichon.printInfo();
+
     }
 }
