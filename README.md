@@ -262,5 +262,5 @@ Lambda  - implementation of functional interface added with Java 8;
         - the single argument of the lambda should be an argument of a class method;
         - the single argument of the lambda calls a method without arguments;
 
-Functional programming - it uses functional interfaces from the java.util.function package;
-                        
+Functional programming - it uses generic functional interfaces from the java.util.function package;
+                       -  
