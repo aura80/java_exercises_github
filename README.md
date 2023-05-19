@@ -263,4 +263,8 @@ Lambda  - implementation of functional interface added with Java 8;
         - the single argument of the lambda calls a method without arguments;
 
 Functional programming - it uses generic functional interfaces from the java.util.function package;
-                       -  
+                       - Supplier<T> with get() method without arguments;
+                       - Consumer<T> and BiConsumer<T>, with accept(.....) method with arguments;  
+                       - Predicate<T> and BiPredicate<T>, with test(.....) method with arguments, which returns a boolean value;
+                       - Function<T, R> and BiFunction<T, R>, with apply(.....) method with arguments;
+                       - others; 
