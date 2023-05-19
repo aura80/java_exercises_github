@@ -241,15 +241,23 @@ Functional Interfaces   - interfaces with one single abstract method, without im
                         - in addition it may have default and static methods, with implementation;
 
 Lambda  - implementation of functional interface added with Java 8;
+        - it allows to an anonymous class to be treated as a normal method;
+        - when using lambda we don't use Override annotation anymore;
         - it converts a segment of code into an argument;
         - a lambda function can be created without belonging to any class / without instantiating any class;
         - it can be treated as an object;
-        - it allows anonymous classes to be treated as functions;
         - the name of the abstract method from the interface has no relevance;
         - () parentheses for more than 1 arguments; 
         - () parentheses for no arguments at all; 
         - without parentheses when we have just 1 argument;
         - -> between the list of arguments and the body of the method;
         - the body of the method may contain curly braces {} or may not, if there is only one statement or if an exception is thrown in that one statement;
+        - if the expression raises an exception, then curly braces are mandatory;
+        - if the body contains just one statement, then we don't have to use curly braces {};
+        - if the body contains more than one statement, then we have to use curly braces {};
         - the return keyword may be omitted or not;
-        - 
+        - when the expression returns an object, then we may not use the return keyword;
+        - for simple lambda expressions, with one single argument, we can write method reference, which means using the name of a method only instead of the method call;
+        - :: symbol separates the class from the name of the method;
+        - the single argument of the lambda should be an argument of a class method;
+        - the single argument of the lambda calls a method without arguments;
