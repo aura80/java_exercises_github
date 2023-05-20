@@ -3,7 +3,7 @@ package java_exercises_github.functional_programming;
 import java.util.*;
 import java.util.function.Supplier;
 
-public class theSupplier {
+public class TheSupplier {
 
     public static void main(String[] args) {
         Set<String> set1 = new HashSet<>();

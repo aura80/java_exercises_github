@@ -3,7 +3,7 @@ package java_exercises_github.functional_programming;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-public class thePredicate {
+public class ThePredicate {
     public static void main(String[] args) {
         Predicate<String> predicate1 = p -> p.contains("a");
         System.out.println(predicate1.test("canar"));

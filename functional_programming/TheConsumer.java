@@ -7,7 +7,7 @@ import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class theConsumer {
+public class TheConsumer {
     public static void main(String[] args) {
         Consumer<String> consumer1 = System.out::println;
         consumer1.accept("Hello summer!");
