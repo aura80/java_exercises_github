@@ -110,6 +110,22 @@ public class TheOptional2 {
             System.out.println("The exception message is:  " + e.getMessage());
         }
 
+        System.out.println();
+        System.out.println(".map()");
+        System.out.println();
+
+        System.out.println(optional2.map(TheOptional2::getName).orElse("No name"));
+        System.out.println(optional3.map(TheOptional2::getName).orElse("No name"));
+        System.out.println(obj2.map(TheOptional2::getName).orElse("No name"));
+        System.out.println(obj5.map(TheOptional2::getName).orElse("No name"));
+
+        System.out.println();
+
+        System.out.println(optional2.map(TheOptional2::getAge).orElse(1000));
+        System.out.println(optional5.map(TheOptional2::getAge).orElse(100));
+        System.out.println(optional4.map(TheOptional2::getAge).orElse(100));
+        System.out.println(optional3.map(TheOptional2::getAge).orElse(100));
+
     }
 
     public static Optional<TheOptional2> getNameOptional(String name) {
