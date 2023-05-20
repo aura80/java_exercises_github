@@ -267,4 +267,9 @@ Functional programming - it uses generic functional interfaces from the java.uti
                        - Consumer<T> and BiConsumer<T>, with accept(.....) method with arguments;  
                        - Predicate<T> and BiPredicate<T>, with test(.....) method with arguments, which returns a boolean value;
                        - Function<T, R> and BiFunction<T, R>, with apply(.....) method with arguments;
-                       - others; 
+                       - others;
+                       - Optional<T> it is a container object that can contain null values or not, helping us to avoid the NullPointerException;
+                       - Optional<T> it is mostly used as a return type to avoid that NullPointerException;
+                       - Optional<T> it is a final class introduced with Java 8 in the java.util package;
+                       - Optional<T> it is a value-based class, which means that it is immutable (declared final also);
+                       - final keyword will prevent Optional methods from being overridden; 
