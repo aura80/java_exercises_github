@@ -1,8 +1,9 @@
 package java_exercises_github.records;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public record DogRecordClass(String name, Integer age, Boolean pedigree) {     // canonical constructor
+public record DogRecordClass(String name, Integer age, Boolean pedigree) implements Comparator<DogRecordClass> {     // canonical constructor
 
     public DogRecordClass(String name, Integer age){            // additional constructor
         this(name, age, true);
@@ -26,6 +27,25 @@ public record DogRecordClass(String name, Integer age, Boolean pedigree) {     /
     @Override
     public Boolean pedigree() {
         return pedigree;
+    }
+
+    // compare method from the Comparator interface
+    @Override
+    public int compare(DogRecordClass o1, DogRecordClass o2) {
+        int i = 0;
+
+        if (o1.age() - o2.age() < 0) {
+            System.out.println(o2.name() + " is bigger than " + o1.name());
+            i = -1;
+        } else if (o1.age() - o2.age() > 0) {
+            System.out.println(o1.name() + " is bigger than " + o2.name());
+            i = 1;
+        } else {
+            System.out.println(o1.name() + " has the same age as " + o1.name());
+            i = i;
+        }
+
+        return i;
     }
 
     // equals / hashcode / toString
