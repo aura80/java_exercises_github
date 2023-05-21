@@ -273,3 +273,38 @@ Functional programming - it uses generic functional interfaces from the java.uti
                        - Optional<T> it is a final class introduced with Java 8 in the java.util package;
                        - Optional<T> it is a value-based class, which means that it is immutable (declared final also);
                        - final keyword will prevent Optional methods from being overridden; 
+                       - when the Optional holds no object, it means that it is empty; 
+                       - Methods: - 
+                                  - to create objects: - of(.....) and ofNullable(.....) are static methods;
+                                                       - Optional.of(.....) - it does not accept null values;  
+                                                       - Optional.ofNullable(.....) - it does accept null values;  
+                                  - to check if Optional holds objects: - isPresent() it returns true or false used in a condition;
+                                                                        - ifPresent(consumer_argument) it returns what the Consumer argument says;
+                                                                        - isEmpty it means that the Optional holds no object inside;
+                                  - to get the value from the optional: - get() equivalent to orElseThrow(), which can throw NoSuchElementException;  
+                                                                        - we usually use get together with isPresent;
+                                                                        - orElse(.....) it returns the value from the Optional or the value of it's argument, if the Optional does not hold any value and it is empty;  
+                                                                        - orElseGet(.....) it returns the value from the Optional or the value of it's argument which is a Supplier if the Optional is empty, when it computes only the argument;
+
+
+Records - special type of classes used to construct immutable objects;
+        - we use record keyword instead of class keyword to define a record;
+        - in the record definition there is the main constructor (canonical constructor), the record fields and eventually the implements keyword for implementing interfaces;
+        - additional constructors may coexist, but they must call the canonical constructor with this keyword;
+        - records can not be extended/inherited because they are final;
+        - records can be instantiated;
+        - records can not have setters;
+        - fields can be accessed by calling methods with the name of the fields (ex: object.field());
+        - each field is final;
+        - records can have canonical (main) constructor and additional constructors;
+        - each additional constructor must call the canonical constructor by using this keyword, otherwise we will have an error;
+        - toString, equals and hashcode methods can be used with records;
+
+Sealed objects - it can be classes and interfaces because they allow inheritance and implementation respectively;
+               - records can not be sealed because they don't allow inheritance, but they can implement sealed interfaces;
+               - it defines a list of classes/interfaces, separated by comma, that can inherit from a class, respectively that can implement an interface;
+               - the sealed keyword it is used before the class or interface keyword;
+               - then the name of the base class or interface;
+               - then the permits keyword;
+               - then the list of child classes or interfaces separated by comma;
+               
