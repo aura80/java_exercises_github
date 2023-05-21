@@ -313,5 +313,6 @@ Sealed objects - it can be classes and interfaces because they allow inheritance
                - interfaces that extends sealed interfaces are specified as non-sealed; 
                - a sealed interface can extend another sealed interface; 
                - a sealed class can extend another sealed class; 
+               - first extends or implements and after that permits; 
 
                
