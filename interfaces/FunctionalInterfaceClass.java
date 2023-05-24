@@ -14,7 +14,7 @@ public class FunctionalInterfaceClass implements FunctionalInterfaceAbstractOnly
 
     @Override
     public String printDefault() {
-        System.out.print(" ** I'm overloaded ");
+        System.out.print(" ** I'm overridden ");
         return FunctionalInterfaceDefault.super.printDefault();
     }
 
