@@ -5,6 +5,6 @@ public interface FunctionalInterfaceDefault {
     String printName();
 
     default String printDefault() {
-        return "I'm a default method from an interface";
+        return " ** I'm a default method from a functional interface";
     }
 }
