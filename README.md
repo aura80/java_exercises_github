@@ -37,7 +37,7 @@ Exceptions - events that occur during the execution of a program;
 Abstract class - abstract keyword is specified between the access modifier and the abstract class name;
                - class that can't be instantiated, objects of the abstract class can't be created;
                - used to share information between related classes;
-               - contains normal methods with implementation and abstract methods without implementation;
+               - contains normal methods with implementation and abstract methods without implementation (abstract keyword);
                - contains fields (interfaces don't contain normal fields, but constants declared public static final);
                - it may have a constructor; 
                - to create objects of the type of abstract class, first we have to extend it;
