@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public record DogRecordClass(String name, Integer age, Boolean pedigree) implements Comparator<DogRecordClass> {     // canonical constructor
 
+    // additional constructor - it calls the canonical constructor with this keyword
     public DogRecordClass(String name, Integer age){            // additional constructor
         this(name, age, true);
     }
