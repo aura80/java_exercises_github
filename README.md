@@ -315,4 +315,5 @@ Sealed objects - it can be classes and interfaces because they allow inheritance
                - a sealed class can extend another sealed class; 
                - first extends or implements and after that permits; 
 
+Access modifiers - 
                
