@@ -315,5 +315,14 @@ Sealed objects - it can be classes and interfaces because they allow inheritance
                - a sealed class can extend another sealed class; 
                - first extends or implements and after that permits; 
 
-Access modifiers - 
+Access modifiers - are keywords used to control the use of fields, constructors, methods and classes; 
+                 - access and non-access modifiers in Java;
+                 - access modifiers - default - when the access modifier it is not mentioned it is supposed to be default modifier;
+                                              - default elements are available only inside the same package;
+                                    - private - fields, constructors and methods accessible only inside the classes where they are declared;
+                                    - protected - fields, constructors and methods accessible in the same package and subclasses from different packages;
+                                    - public - classes, fields, constructors and methods accessible from everywhere, without restrictions;
+                        - for classes: public and default;
+                        - for fields, constructors and methods: public, default, private and protected;
+                 - non-access modifiers - for classes 
                
