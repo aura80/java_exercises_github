@@ -325,5 +325,5 @@ Access modifiers - are keywords used to control the use of fields, constructors,
                         - for classes: public and default;
                         - for fields, constructors and methods: public, default, private and protected;
                  - non-access modifiers - for classes - final and abstract;
-                                        - for attributes and methods - final, static, abstract, transient, synchronized and volatile;
+                                        - for fields and methods - final, static, abstract, transient, synchronized and volatile;
                
