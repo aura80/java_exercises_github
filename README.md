@@ -334,6 +334,7 @@ An object is an instance of a class and has:
         - a state represented by the attributes of the class;
         - behavior represented by the methods of the class;
         - identity represented by the name of the object;
+A class is a blueprint, a template to create objects.
 
 OOP has 4 main concepts:
         - Abstraction - it means hiding unnecessary information from the user and showing only the necessary one;
