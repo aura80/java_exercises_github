@@ -319,6 +319,7 @@ Access modifiers - are keywords used to control the use of fields, constructors,
                  - access and non-access modifiers in Java;
                  - access modifiers - default - when the access modifier it is not mentioned it is supposed to be default modifier;
                                               - default elements are available only inside the same package;
+                                              - package-private;
                                     - private - fields, constructors and methods accessible only inside the classes where they are declared;
                                     - protected - fields, constructors and methods accessible in the same package and subclasses from the same package or different packages;
                                     - public - classes, fields, constructors and methods accessible from everywhere, without restrictions;
