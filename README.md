@@ -320,10 +320,21 @@ Access modifiers - are keywords used to control the use of fields, constructors,
                  - access modifiers - default - when the access modifier it is not mentioned it is supposed to be default modifier;
                                               - default elements are available only inside the same package;
                                     - private - fields, constructors and methods accessible only inside the classes where they are declared;
-                                    - protected - fields, constructors and methods accessible in the same package and subclasses from different packages;
+                                    - protected - fields, constructors and methods accessible in the same package and subclasses from the same package or different packages;
                                     - public - classes, fields, constructors and methods accessible from everywhere, without restrictions;
                         - for classes: public and default;
                         - for fields, constructors and methods: public, default, private and protected;
                  - non-access modifiers - for classes - final and abstract;
                                         - for fields and methods - final, static, abstract, transient, synchronized and volatile;
-               
+         
+OOP - Object Oriented Programming
+
+OOP is a type of programming language which uses objects from the real life. So the object it is the base unit of the OOP.
+An object is an instance of a class and has: 
+        - a state represented by the attributes of the class;
+        - behavior represented by the methods of the class;
+        - identity represented by the name of the object;
+
+OOP has 4 main concepts:
+        - Abstraction - it means hiding unnecessary information from the user and showing only the necessary one;
+        - Encapsulation - it means wrapping up the data to prevent the information from being accessed from outside the wrap;
