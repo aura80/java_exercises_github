@@ -337,4 +337,22 @@ An object is an instance of a class and has:
 
 OOP has 4 main concepts:
         - Abstraction - it means hiding unnecessary information from the user and showing only the necessary one;
+                      - using abstract classes and abstract methods;
         - Encapsulation - it means wrapping up the data to prevent the information from being accessed from outside the wrap;
+                        - using private fields and public methods;
+        - Inheritance - it means that one class it is allowed to inherit the characteristics of another class;
+                      - extends keyword it is used;
+                      - "is-a" relationship;
+                      - it has superclass/parent class/base class, subclass/child class;
+                      - by using inheritance we are reusing the fields and methods of the parent class;
+                      - multiple inheritance it is not supported in Java and that means that a class can extend only one single class;
+        - Polymorphism - it means to differentiate between entities with the same name;
+                       - the ability to take many forms;
+                       - static - compile-time polymorphism: overloading; 
+                       - dynamic - run-time polymorphism: overriding;
+                       - overloading - methods have the same name but different parameters as type, number and order;
+                                     - Java does not allow user defined operator overloading, except + and += which are overloaded for Strings objects (concatenation);
+                                     - operator overloading it is done internally in Java;
+                       - overriding - methods of the base class are used inside the child class with the same signature but with different implementation;
+
+
