@@ -352,7 +352,7 @@ OOP has 4 main concepts:
                        - dynamic - run-time polymorphism: overriding;
                        - overloading - methods have the same name but different parameters as type, number and order;
                                      - Java does not allow user defined operator overloading, except + and += which are overloaded for Strings objects (concatenation);
-                                     - operator overloading it is done internally in Java;
+                                     - operator overloading it is done internally in Java; a.add(b) it is preferred to a + b;
                        - overriding - methods of the base class are used inside the child class with the same signature but with different implementation;
 
 
