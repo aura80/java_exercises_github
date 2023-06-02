@@ -239,6 +239,7 @@ Annotations - metadata, supplementary information that does not affect directly 
             
 Functional Interfaces   - interfaces with one single abstract method, without implementation;
                         - in addition it may have default and static methods, with implementation;
+                        - @FunctionalInterface annotation may be written before it or not;
 
 Lambda  - implementation of functional interface added with Java 8;
         - it allows to an anonymous class to be treated as a normal method;
